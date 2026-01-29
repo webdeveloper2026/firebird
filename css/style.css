@@ -55,7 +55,8 @@ h1, h2, h3, h4, .font-tech {
     overflow: visible !important;
 }
 
-.module-card::after {
+.module-card::after,
+.solve-card::after {
     content: '';
     position: absolute;
     inset: -1px;
@@ -67,10 +68,10 @@ h1, h2, h3, h4, .font-tech {
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    opacity: 0;
     transition: opacity 0.3s;
     pointer-events: none;
     z-index: 10;
+    opacity: 0;
 }
 
 @property --angle {
@@ -83,9 +84,29 @@ h1, h2, h3, h4, .font-tech {
     to { --angle: 360deg; }
 }
 
-.module-card:hover::after {
+.module-card:hover::after,
+.solve-card:hover::after {
     opacity: 1;
     animation: neon-rotate 2s linear infinite;
+}
+
+/* Grid Beam Styles */
+.grid-light-beam {
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--brand-orange), transparent);
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+    filter: blur(1px);
+    box-shadow: 0 0 15px var(--brand-orange);
+}
+
+.grid-light-beam.vertical {
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(180deg, transparent, var(--brand-orange), transparent);
 }
 
 .bento-card:hover {
@@ -198,6 +219,21 @@ h1, h2, h3, h4, .font-tech {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
+#right-grid-decoration {
+    background-image: 
+        linear-gradient(to right, var(--brand-orange) 1.5px, transparent 1.5px),
+        linear-gradient(to bottom, var(--brand-orange) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+}
+
+@media (min-width: 768px) {
+    #right-grid-decoration {
+        background-size: 50px 50px;
+    }
+}
+
 .perspective-container {
     perspective: 3000px;
     display: flex;
@@ -212,13 +248,21 @@ h1, h2, h3, h4, .font-tech {
     height: 100%;
 }
 
-.screen-layer {
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+.flat-stack {
+    transform-style: preserve-3d;
+    transform: rotateY(15deg) rotateX(10deg);
+    width: 100%;
+    height: 100%;
 }
+
+.channel-layer-1 { transform: translateZ(160px); z-index: 40; }
+.channel-layer-2 { transform: translateZ(80px); z-index: 30; opacity: 0.7; }
+.channel-layer-3 { transform: translateZ(0px); z-index: 20; opacity: 0.4; }
 
 .layer-1 { 
     transform: translateZ(60px);
     z-index: 30;
+    opacity: 1 !important;
 }
 
 .layer-2 { 

@@ -55,7 +55,6 @@
                 <a href="#use-cases" class="text-sm font-medium text-white hover:text-brand-orange transition-colors">Use cases</a>
                 <a href="#services" class="text-sm font-medium text-white hover:text-brand-orange transition-colors">Services</a>
                 <a href="#channels" class="text-sm font-medium text-white hover:text-brand-orange transition-colors">Channels</a>
-                <a href="#resource" class="text-sm font-medium text-white hover:text-brand-orange transition-colors">Resource</a>
                 <a href="#faqs" class="text-sm font-medium text-white hover:text-brand-orange transition-colors">FAQs</a>
             </nav>
             
@@ -78,7 +77,6 @@
                 <a href="#use-cases" class="mobile-nav-link">Use cases</a>
                 <a href="#services" class="mobile-nav-link">Services</a>
                 <a href="#channels" class="mobile-nav-link">Channels</a>
-                <a href="#resource" class="mobile-nav-link">Resource</a>
                 <a href="#faqs" class="mobile-nav-link">FAQs</a>
                 <hr class="border-white/10 my-2">
                 <a href="#" class="mobile-nav-link text-brand-orange">Contact us</a>
@@ -90,7 +88,7 @@
         <section class="min-h-screen flex items-center px-4 md:px-6 pt-24 pb-12 lg:pt-32 lg:pb-0 overflow-hidden relative">
             <div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 <div class="flex-[1.2] text-center lg:text-left z-10 order-2 lg:order-1">
-                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium tracking-normal mb-6 leading-tight lg:leading-[1.48]" id="hero-title">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium tracking-normal mb-6 leading-tight lg:leading-[1.0]" id="hero-title">
                         <span class="text-gradient block overflow-visible">Orchestrate Every</span>
                         <span class="text-orange-gradient block overflow-visible">Customer Journey</span>
                         <span class="text-gradient block overflow-visible">From One Screen</span>
@@ -115,18 +113,18 @@
 
                 <div class="flex-1 w-full relative h-[300px] md:h-[400px] lg:h-[600px] perspective-container order-1 lg:order-2 scale-90 md:scale-100" id="hero-mockup">
                     <div class="screens-stack relative w-full h-full flex items-center justify-center">
-                        <div class="screen-layer layer-4 absolute w-[90%] aspect-video shadow-xl overflow-hidden rounded-sm border border-white/5 opacity-10">
+                        <div class="screen-layer layer-4 absolute w-[90%] aspect-video shadow-xl overflow-hidden rounded-sm border border-white/5 bg-slate-900 opacity-20">
                             <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
                         </div>
-                        <div class="screen-layer layer-3 absolute w-[90%] aspect-video shadow-2xl overflow-hidden rounded-sm border border-white/5 opacity-30">
+                        <div class="screen-layer layer-3 absolute w-[90%] aspect-video shadow-2xl overflow-hidden rounded-sm border border-white/5 bg-slate-900 opacity-40">
                             <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
                         </div>
-                        <div class="screen-layer layer-2 absolute w-[90%] aspect-video shadow-2xl overflow-hidden rounded-sm border border-white/5 opacity-60">
+                        <div class="screen-layer layer-2 absolute w-[90%] aspect-video shadow-2xl overflow-hidden rounded-sm border border-white/5 bg-slate-900 opacity-70">
                             <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
                         </div>
-                        <div class="screen-layer layer-1 absolute w-[90%] aspect-video shadow-[0_50px_100px_rgba(0,0,0,0.5)] overflow-hidden rounded-sm border border-white/10">
+                        <div class="screen-layer layer-1 absolute w-[90%] aspect-video shadow-[0_50px_100px_rgba(0,0,0,0.5)] overflow-hidden rounded-sm border border-white/10 bg-slate-900">
                             <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/10 to-transparent pointer-events-none"></div>
+                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/5 to-transparent pointer-events-none"></div>
                         </div>
                     </div>
                 </div>
@@ -145,13 +143,7 @@
 
                 <div class="flex-1 text-center lg:text-left relative min-h-[auto] lg:min-h-[400px]">
                     <div class="absolute inset-0 opacity-[0.15] lg:opacity-[0.22] pointer-events-none z-0 overflow-visible" id="right-grid-decoration-container">
-                        <div id="right-grid-decoration" class="w-[600px] lg:w-[800px] h-[600px] lg:h-[800px] absolute top-1/2 left-1/2 lg:top-auto lg:left-auto -translate-x-1/2 -translate-y-1/2 lg:translate-x-0 lg:translate-y-0 lg:-top-40 lg:-right-40" 
-                             style="background-image: 
-                                linear-gradient(to right, var(--brand-orange) 1.5px, transparent 1.5px),
-                                linear-gradient(to bottom, var(--brand-orange) 1.5px, transparent 1.5px);
-                                background-size: 50px 50px;
-                                mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
-                                -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);">
+                        <div id="right-grid-decoration" class="w-[300px] md:w-[600px] lg:w-[800px] h-[300px] md:h-[600px] lg:h-[800px] absolute top-1/2 left-1/2 lg:top-auto lg:left-auto -translate-x-1/2 -translate-y-1/2 lg:translate-x-0 lg:translate-y-0 lg:-top-40 lg:-right-40">
                         </div>
                     </div>
                     
@@ -167,122 +159,6 @@
                             <div class="flex items-center gap-4">
                                 <div class="w-1 h-12 bg-brand-orange"></div>
                                 <p class="text-slate-500 text-sm font-medium">Dynamic journey mapping triggered by <br>real-time user behavior.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="resellers" class="py-24 px-4 reveal-section">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight">Resellers</h2>
-                    <p class="text-lg text-slate-400 max-w-2xl mx-auto">
-                        UCP offers resellers, agencies, and system integrators a complete white-label engagement suite.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bento-card module-card">
-                        <div class="w-12 h-12 bg-brand-orange/10 rounded-sm flex items-center justify-center text-brand-orange mb-8 font-medium text-xl">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.172-1.172a4 4 0 115.656 5.656L15 13.172V7.343z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-medium mb-4">White-Label Platform</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed">Offer UCP with your brand and domain. Customize templates, login screens, user hierarchy, and journeys.</p>
-                    </div>
-                    <div class="bento-card module-card">
-                        <div class="w-12 h-12 bg-blue-500/10 rounded-sm flex items-center justify-center text-blue-500 mb-8 font-medium text-xl">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-medium mb-4">Multi-Tenant Login</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed">Manage client partitions with dedicated dashboards, isolated billing, and independent campaign setups.</p>
-                    </div>
-                    <div class="bento-card module-card">
-                        <div class="w-12 h-12 bg-emerald-500/10 rounded-sm flex items-center justify-center text-emerald-500 mb-8 font-medium text-xl">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-medium mb-4">Role-Based Access Control</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed">Set permissions by partner, operator, or analyst roles. Includes approval flows and read-only dashboards.</p>
-                    </div>
-                    <div class="bento-card module-card">
-                        <div class="w-12 h-12 bg-purple-500/10 rounded-sm flex items-center justify-center text-purple-500 mb-8 font-medium text-xl">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-medium mb-4">Reseller Reporting Suite</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed">Monthly usage summaries, profit analysis, top client leaderboard, template approvals, and API metrics.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-4 reveal-section relative overflow-hidden">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-                    <div class="flex-1">
-                        <span class="text-brand-orange font-medium uppercase tracking-[0.3em] text-xs mb-6 block">About UCP</span>
-                        <h2 class="text-4xl md:text-6xl font-medium mb-8 tracking-tight">Built for Enterprises. <br><span class="text-slate-500">Loved by Growth Teams.</span></h2>
-                        <p class="text-lg text-slate-400 mb-12 leading-relaxed max-w-2xl">
-                            UCP helps you unify, simplify, and amplify every message, every journey, across every channel. From onboarding to retention, reactivation to monetization — all in real time, powered by intelligence.
-                        </p>
-                        
-                        <div class="flex flex-col gap-6">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-[1px] bg-brand-orange"></div>
-                                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest">Enterprise Grade Security</p>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-[1px] bg-brand-orange"></div>
-                                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest">Global Scalability</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flex-1 w-full relative">
-                        <div class="absolute -inset-4 bg-brand-orange/5 blur-3xl rounded-full"></div>
-                        
-                        <div class="relative bento-card bg-slate-900/40 p-10 rounded-sm border-white/5 backdrop-blur-sm">
-                            <div class="flex items-center justify-between mb-10">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-sm bg-brand-orange/10 flex items-center justify-center font-medium text-xs text-brand-orange border border-brand-orange/20">UCP</div>
-                                    <div>
-                                        <div class="font-medium text-sm text-white">Active Intelligence</div>
-                                        <div class="text-[10px] text-slate-500 uppercase tracking-widest">Real-time Orchestration</div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
-                                    <span class="text-green-500 text-[10px] font-medium uppercase tracking-widest">Live</span>
-                                </div>
-                            </div>
-                            
-                            <div class="space-y-8">
-                                <div class="space-y-3">
-                                    <div class="flex justify-between text-[10px] font-medium uppercase text-slate-500 tracking-widest"><span>Engagement</span><span>84%</span></div>
-                                    <div class="h-1 bg-slate-800 rounded-full w-full overflow-hidden">
-                                        <div class="h-full bg-brand-orange w-[84%] shadow-[0_0_10px_#04f0c3]"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between text-[10px] font-medium uppercase text-slate-500 tracking-widest"><span>Automation</span><span>92%</span></div>
-                                    <div class="h-1 bg-slate-800 rounded-full w-full overflow-hidden">
-                                        <div class="h-full bg-blue-500 w-[92%] shadow-[0_0_10px_#3b82f6]"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between text-[10px] font-medium uppercase text-slate-500 tracking-widest"><span>CLV Growth</span><span>67%</span></div>
-                                    <div class="h-1 bg-slate-800 rounded-full w-full overflow-hidden">
-                                        <div class="h-full bg-emerald-500 w-[67%] shadow-[0_0_10px_#10b981]"></div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -354,42 +230,140 @@
             </div>
         </section>
 
-        <section id="solutions" class="py-24 px-4 reveal-section relative">
-            <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight ">What Does It Solve?</h2>
-                    <p class="text-lg text-slate-400">Transform your communication challenges into competitive advantages</p>
+        <section id="solutions" class="py-24 px-4 reveal-section relative overflow-hidden bg-brand-dark">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-24">
+                    <span class="text-brand-orange font-medium uppercase tracking-[0.3em] text-xs mb-6 block">The Transformation</span>
+                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight">What Does It Solve?</h2>
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto">Bridging the gap between operational chaos and seamless intelligence.</p>
                 </div>
-                
-                <div class="bento-card p-0 rounded-[2rem] border-white/5 bg-slate-900/30 overflow-hidden">
-                    <div class="grid grid-cols-2 border-b border-white/5 font-medium text-[10px] uppercase tracking-[0.2em]">
-                        <div class="p-6 md:p-8 text-slate-500 bg-black/20">Challenges</div>
-                        <div class="p-6 md:p-8 text-brand-orange bg-brand-orange/5">Our Solution</div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-brand-orange/20 border border-brand-orange/20 rounded-sm overflow-hidden relative" id="solutions-grid">
+                    <div id="h-beam" class="grid-light-beam"></div>
+                    <div id="v-beam" class="grid-light-beam vertical"></div>
+                    <!-- Point 1 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">01</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Fragmented <br>Communication</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Siloed channels leading to inconsistent customer data and broken experiences.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light">Orchestration across <span class="text-brand-orange font-medium">multiple communication channels</span> from a single intelligent interface.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="divide-y divide-white/5">
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Fragmented communication</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">Unified orchestration across WhatsApp, SMS, Email, Voice, and Social media</div>
+
+                    <!-- Point 2 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">02</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Generic <br>Messaging</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Mass broadcasts resulting in low engagement and high customer fatigue.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light"><span class="text-brand-orange font-medium">AI-led, behaviour-triggered</span> personalized communication that adapts to journeys.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Generic Messaging</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">AI-led, behaviour-triggered personalized communication</div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">03</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Low Agent <br>Productivity</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Efficiency lost to platform switching and manual data lookups.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light">Single-screen <span class="text-brand-orange font-medium">CRM, Dialler & Bot interface</span> that streamlines the entire workflow.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Low Frontline Agent productivity</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">Improved efficiency with Single-screen CRM, Dialler & Bot interface</div>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">04</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Manual <br>Campaigns</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Operational overload from manual campaign setup and execution.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light"><span class="text-brand-orange font-medium">Automated journeys</span> triggered by real-time events and user behavior patterns.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Manual Campaign overload</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">Automated journeys triggered by events and user behaviour</div>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">05</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Weak Retention <br>& CLV</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Poor lifecycle management leading to low customer lifetime value.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light"><span class="text-brand-orange font-medium">RFM-led segmentation</span> and lifecycle automation to drive repeat purchases.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Weak Retention & Life time value</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">RFM-led segmentation and lifecycle automation</div>
-                        </div>
-                        <div class="grid grid-cols-2 group hover:bg-white/[0.02] transition-colors">
-                            <div class="p-6 md:p-8 border-r border-white/5 text-sm font-medium">Regulatory & Consent Challenges</div>
-                            <div class="p-6 md:p-8 text-slate-400 text-sm">Built-in consent suite with audit trails and compliance controls</div>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="group relative bg-brand-dark p-10 hover:bg-slate-900/40 transition-all duration-700 solve-card">
+                        <div class="absolute top-0 right-0 p-6 text-4xl font-bold text-white/[0.12] group-hover:text-brand-orange transition-all duration-500 group-hover:scale-110">06</div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-1 h-8 bg-slate-700 group-hover:bg-brand-orange transition-colors"></div>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">Compliance <br>& Consent</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-5 rounded-sm bg-black/40 border border-white/5 group-hover:border-brand-orange/20 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-slate-500 block mb-2">The Challenge</span>
+                                    <p class="text-slate-400 text-xs leading-relaxed font-medium">Global regulatory hurdles and complex consent tracking challenges.</p>
+                                </div>
+                                <div class="p-5 rounded-sm bg-brand-orange/5 border border-brand-orange/10 group-hover:border-brand-orange/30 transition-colors">
+                                    <span class="text-[10px] uppercase tracking-widest text-brand-orange block mb-2">UCP Solution</span>
+                                    <p class="text-white text-sm leading-relaxed font-light">Built-in <span class="text-brand-orange font-medium">consent suite</span> with full audit trails and global regulatory controls.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -439,50 +413,83 @@
             </div>
         </section>
 
-        <section id="services" class="py-24 px-4 reveal-section">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-6xl font-medium mb-6 uppercase tracking-tighter">Our services</h2>
-                    <div class="h-1 w-20 bg-brand-orange mx-auto"></div>
+        <section id="services" class="py-24 px-4 reveal-section relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-orange/5 blur-[120px] rounded-full pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center mb-24">
+                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight">Our Services</h2>
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto font-light">Strategic expertise to accelerate your transformation from communication to orchestration.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div class="bento-card p-10 bg-gradient-to-br from-slate-900 to-brand-dark">
-                        <h3 class="text-3xl font-medium text-brand-orange uppercase tracking-widest  mb-12">Enablement</h3>
-                        <div class="space-y-12">
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">01</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Tailored Onboarding & <br>GTM Mapping</div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+                    <!-- Enablement Pillar -->
+                    <div class="group relative bg-slate-900/40 backdrop-blur-sm border border-white/5 rounded-sm p-6 md:p-10 hover:border-brand-orange/20 transition-all duration-700">
+                        <div class="flex items-center gap-6 mb-12">
+                            <div class="w-1 h-10 bg-brand-orange"></div>
+                            <h3 class="text-2xl font-medium text-white tracking-tight">Enablement</h3>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 01</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Tailored Onboarding <br>& GTM Mapping</h4>
                             </div>
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">02</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Journey Flow Design <br>by UCP Experts</div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 02</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Journey Flow Design <br>by UCP Experts</h4>
                             </div>
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">03</span>
-                                <div class="font-medium text-xl uppercase  pt-2">CRM + Dialler + Bot <br>Integration Workshops</div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 03</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">CRM + Dialler + Bot <br>Integration Workshops</h4>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 04</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">API & Webhook <br>Orchestration Setup</h4>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bento-card p-10 bg-gradient-to-br from-slate-900 to-brand-dark">
-                        <h3 class="text-3xl font-medium text-blue-500 uppercase tracking-widest  mb-12">Intelligence</h3>
-                        <div class="space-y-12">
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">04</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Generative AI for <br>Content + Messaging</div>
+                    <!-- Intelligence Pillar -->
+                    <div class="group relative bg-slate-900/40 backdrop-blur-sm border border-white/5 rounded-sm p-6 md:p-10 hover:border-brand-orange/20 transition-all duration-700">
+                        <div class="flex items-center gap-6 mb-12">
+                            <div class="w-1 h-10 bg-slate-500 group-hover:bg-brand-orange transition-colors"></div>
+                            <h3 class="text-2xl font-medium text-white tracking-tight">Intelligence</h3>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 05</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Generative AI for <br>Content + Messaging</h4>
                             </div>
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">05</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Voice Journeys <br>(IVR & OBD)</div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 06</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Voice Journeys <br>(IVR & OBD)</h4>
                             </div>
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">06</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Agentic AI Suggestions <br>on Campaign Design</div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 07</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Agentic AI Suggestions <br>on Campaign Design</h4>
                             </div>
-                            <div class="flex gap-8 group">
-                                <span class="text-slate-800 font-medium text-5xl group-hover:text-slate-700 transition-colors">07</span>
-                                <div class="font-medium text-xl uppercase  pt-2">Social Media Extension <br>(IG, FB, Telegram)</div>
+                            
+                            <div class="space-y-3">
+                                <span class="text-brand-orange font-bold text-[10px] tracking-[0.3em] uppercase opacity-80">Service 08</span>
+                                <div class="h-[1px] w-full bg-brand-orange/20"></div>
+                                <h4 class="text-lg font-light text-white leading-snug tracking-tight">Social Media Extension <br>(IG, FB, Telegram)</h4>
+                            </div>
+                        </div>
+                    </div>
                             </div>
                         </div>
                     </div>
@@ -492,45 +499,33 @@
 
         <section id="channels" class="py-24 px-4 reveal-section overflow-hidden">
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
-                <div class="flex-1 relative">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-orange/5 blur-[100px] rounded-full"></div>
-                    
-                    <div class="relative flex justify-center">
-                        <div class="phone-frame z-10 bg-[#050505]">
-                            <div class="phone-island"></div>
-                            <div class="p-8 h-full flex flex-col justify-center items-center text-center">
-                                <div class="mb-8">
-                                    <img src="UCP_LOGO.png" alt="UCP Logo" class="w-24 h-auto object-contain">
-                                </div>
-                                <p class="text-slate-500 text-xs uppercase tracking-widest font-medium">Orchestrating Now</p>
-                            </div>
+                <div class="flex-1 w-full relative h-[300px] md:h-[400px] lg:h-[500px] perspective-container">
+                    <div class="flat-stack relative w-full h-full flex items-center justify-center">
+                        <!-- Layer 3: Deepest -->
+                        <div class="screen-layer channel-layer-3 absolute w-[90%] aspect-video shadow-xl overflow-hidden rounded-sm border border-white/5">
+                            <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
                         </div>
                         
-                        <div class="absolute top-20 -left-12 w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-center floating-icon" style="animation-delay: 0s">
-                            <span class="text-blue-500 font-medium text-xl">f</span>
+                        <!-- Layer 2: Middle -->
+                        <div class="screen-layer channel-layer-2 absolute w-[90%] aspect-video shadow-2xl overflow-hidden rounded-sm border border-white/5">
+                            <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute top-4 right-8 w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-center floating-icon" style="animation-delay: 0.5s">
-                            <span class="text-pink-500 font-medium text-xl">IG</span>
-                        </div>
-                        <div class="absolute bottom-40 -left-16 w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-center floating-icon" style="animation-delay: 1s">
-                            <span class="text-blue-400 font-medium text-xl">TG</span>
-                        </div>
-                        <div class="absolute bottom-16 right-0 w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-center floating-icon" style="animation-delay: 1.5s">
-                            <span class="text-green-500 font-medium text-xl">WA</span>
-                        </div>
-                        <div class="absolute -bottom-10 left-16 w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-sm flex items-center justify-center floating-icon" style="animation-delay: 2s">
-                            <span class="text-blue-600 font-medium text-xl">FB</span>
+                        
+                        <!-- Layer 1: Front Focus -->
+                        <div class="screen-layer channel-layer-1 absolute w-[90%] aspect-video shadow-[0_50px_100px_rgba(0,0,0,0.5)] overflow-hidden rounded-sm border border-white/10">
+                            <img src="ucp_screenshot.webp" alt="UCP Interface" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/10 to-transparent pointer-events-none"></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="flex-1">
+                <div class="flex-1 text-center lg:text-left">
                     <span class="text-brand-orange font-medium uppercase tracking-[0.3em] text-xs mb-6 block">Native Integrations</span>
                     <h2 class="text-4xl md:text-6xl font-medium mb-8 tracking-tight"><span class="text-gradient">Multi-Channel</span> <br>Communication</h2>
                     <p class="text-lg text-slate-400 mb-10 font-medium leading-relaxed">
                         UCP supports a wide range of native channels that can be orchestrated in real-time, triggered contextually, and optimized by performance metrics.
                     </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 text-left max-w-md mx-auto lg:mx-0">
                         <div class="flex items-center gap-3 text-slate-200 font-medium"><div class="w-1.5 h-1.5 rounded-full bg-brand-orange"></div> WhatsApp Business API</div>
                         <div class="flex items-center gap-3 text-slate-200 font-medium"><div class="w-1.5 h-1.5 rounded-full bg-brand-orange"></div> SMS (A2P, Transactional)</div>
                         <div class="flex items-center gap-3 text-slate-200 font-medium"><div class="w-1.5 h-1.5 rounded-full bg-brand-orange"></div> Email</div>
@@ -543,33 +538,51 @@
             </div>
         </section>
 
-        <section id="resource" class="py-24 px-4 reveal-section">
+        <section id="resellers" class="py-24 px-4 reveal-section">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight ">Resource Center</h2>
-                    <p class="text-lg text-slate-400">Everything you need to build and scale.</p>
+                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight">Resellers</h2>
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                        UCP offers resellers, agencies, and system integrators a complete white-label engagement suite.
+                    </p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                    <div class="bento-card hover:border-white/20">
-                        <h5 class="font-medium text-xs uppercase tracking-widest mb-4 text-slate-300">Product Videos & Tours</h5>
-                        <p class="text-slate-500 text-xs font-medium leading-relaxed">Feature-by-feature platform summary with enterprise use case examples.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bento-card module-card">
+                        <div class="w-12 h-12 bg-brand-orange/10 rounded-sm flex items-center justify-center text-brand-orange mb-8 font-medium text-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.172-1.172a4 4 0 115.656 5.656L15 13.172V7.343z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-medium mb-4">White-Label Platform</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Offer UCP with your brand and domain. Customize templates, login screens, user hierarchy, and journeys.</p>
                     </div>
-                    <div class="bento-card border-brand-orange/30 bg-brand-orange/5">
-                        <h5 class="font-medium text-xs uppercase tracking-widest mb-4 text-brand-orange">API Docs + Guides</h5>
-                        <p class="text-slate-400 text-xs font-medium leading-relaxed">REST-based API guide with JSON schema, payload structure, and webhook setup.</p>
+                    <div class="bento-card module-card">
+                        <div class="w-12 h-12 bg-slate-500/10 rounded-sm flex items-center justify-center text-slate-400 mb-8 font-medium text-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-medium mb-4">Multi-Tenant Login</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Manage client partitions with dedicated dashboards, isolated billing, and independent campaign setups.</p>
                     </div>
-                    <div class="bento-card hover:border-white/20">
-                        <h5 class="font-medium text-xs uppercase tracking-widest mb-4 text-slate-300">Use Case PDFs</h5>
-                        <p class="text-slate-500 text-xs font-medium leading-relaxed">Step-by-step CRM, WABA, and dialer integrations with field mapping samples.</p>
+                    <div class="bento-card module-card">
+                        <div class="w-12 h-12 bg-brand-orange/10 rounded-sm flex items-center justify-center text-brand-orange mb-8 font-medium text-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-medium mb-4">Role-Based Access Control</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Set permissions by partner, operator, or analyst roles. Includes approval flows and read-only dashboards.</p>
                     </div>
-                    <div class="bento-card hover:border-white/20">
-                        <h5 class="font-medium text-xs uppercase tracking-widest mb-4 text-slate-300">Compliance FAQ</h5>
-                        <p class="text-slate-500 text-xs font-medium leading-relaxed">Policy, templates, and technical implementation to ensure compliance.</p>
-                    </div>
-                    <div class="bento-card border-brand-orange/30 bg-brand-orange/5">
-                        <h5 class="font-medium text-xs uppercase tracking-widest mb-4 text-brand-orange">Security Whitepaper</h5>
-                        <p class="text-slate-400 text-xs font-medium leading-relaxed">Encryption, storage, SLA, and ISO GDPR compliance protocols for IT teams.</p>
+                    <div class="bento-card module-card">
+                        <div class="w-12 h-12 bg-slate-500/10 rounded-sm flex items-center justify-center text-slate-400 mb-8 font-medium text-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-medium mb-4">Reseller Reporting Suite</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Monthly usage summaries, profit analysis, top client leaderboard, template approvals, and API metrics.</p>
                     </div>
                 </div>
             </div>
@@ -578,38 +591,38 @@
         <section id="faqs" class="py-24 px-4 reveal-section">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-6xl font-medium mb-6 uppercase  tracking-tighter">Frequently asked questions</h2>
-                    <div class="h-1 w-20 bg-brand-orange mx-auto"></div>
+                    <h2 class="text-4xl md:text-6xl font-medium mb-6 tracking-tight">Frequently Asked Questions</h2>
+                    <p class="text-slate-400 text-lg font-light">Everything you need to know about the UCP platform.</p>
                 </div>
                 
                 <div class="space-y-4">
-                    <details class="group bento-card p-0 overflow-hidden" open>
-                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-xl select-none hover:bg-white/5 transition-colors">
-                            What modules does UCP include?
+                    <details class="group bento-card p-0 overflow-hidden border-white/5 hover:border-brand-orange/20 transition-all duration-500" open>
+                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-lg md:text-xl select-none hover:bg-white/5 transition-colors">
+                            <span class="text-white">What modules does UCP include?</span>
                             <span class="text-brand-orange group-open:rotate-180 transition-transform text-2xl">↓</span>
                         </summary>
-                        <div class="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6 bg-black/20">
-                            Advance Campaign Manager, Segment & Target, Reach & Engage Manager, Campaign Journey Builder, Voice flow builder, WhatsApp chatbot flow builder, Analytics, Reporting & Dashboards, Human Agent Console, WABA Bridge, Consent Tools.
+                        <div class="px-8 pb-8 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-6 bg-black/20">
+                            UCP includes an Advance Campaign Manager, Segment & Target tools, Reach & Engage Manager, Campaign Journey Builder, Voice and WhatsApp chatbot flow builders, comprehensive Analytics, Reporting & Dashboards, a Human Agent Console, WABA Bridge, and a full suite of Consent Tools.
                         </div>
                     </details>
                     
-                    <details class="group bento-card p-0 overflow-hidden">
-                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-xl select-none hover:bg-white/5 transition-colors">
-                            Can we deploy specific modules only?
+                    <details class="group bento-card p-0 overflow-hidden border-white/5 hover:border-brand-orange/20 transition-all duration-500">
+                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-lg md:text-xl select-none hover:bg-white/5 transition-colors">
+                            <span class="text-white">Can we deploy specific modules only?</span>
                             <span class="text-brand-orange group-open:rotate-180 transition-transform text-2xl">↓</span>
                         </summary>
-                        <div class="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6 bg-black/20">
-                            Yes, the platform is fully modular. You can choose to deploy specific modules based on your business growth needs.
+                        <div class="px-8 pb-8 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-6 bg-black/20">
+                            Yes, the platform is fully modular. You can choose to deploy specific modules based on your business growth needs, ensuring you only pay for the capabilities you require at any given time.
                         </div>
                     </details>
                     
-                    <details class="group bento-card p-0 overflow-hidden">
-                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-xl select-none hover:bg-white/5 transition-colors">
-                            Does the platform support multi language flows?
+                    <details class="group bento-card p-0 overflow-hidden border-white/5 hover:border-brand-orange/20 transition-all duration-500">
+                        <summary class="p-8 cursor-pointer flex justify-between items-center font-medium text-lg md:text-xl select-none hover:bg-white/5 transition-colors">
+                            <span class="text-white">Does the platform support multi-language flows?</span>
                             <span class="text-brand-orange group-open:rotate-180 transition-transform text-2xl">↓</span>
                         </summary>
-                        <div class="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6 bg-black/20">
-                            Yes, UCP supports over 100 native languages for both automated messaging and interactive AI flows.
+                        <div class="px-8 pb-8 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-6 bg-black/20">
+                            Yes, UCP supports over 100 native languages for both automated messaging and interactive AI flows, enabling seamless global customer engagement.
                         </div>
                     </details>
                 </div>

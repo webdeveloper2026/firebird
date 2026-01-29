@@ -267,6 +267,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const initRandomBeams = () => {
+        const hBeam = document.getElementById('h-beam');
+        const vBeam = document.getElementById('v-beam');
+        const grid = document.getElementById('solutions-grid');
+        if (!hBeam || !vBeam || !grid) return;
+
+        const animateH = () => {
+            const row = Math.floor(Math.random() * 3); // 0, 1, 2
+            const yPos = row === 0 ? "0%" : row === 1 ? "50%" : "100%";
+            
+            gsap.set(hBeam, { top: yPos, left: "-10%", opacity: 0 });
+            gsap.to(hBeam, {
+                left: "110%",
+                opacity: 0.8,
+                duration: 2 + Math.random() * 2,
+                ease: "power1.inOut",
+                onComplete: () => {
+                    gsap.set(hBeam, { opacity: 0 });
+                    setTimeout(animateH, Math.random() * 3000);
+                }
+            });
+        };
+
+        const animateV = () => {
+            const col = Math.floor(Math.random() * 4); // 0, 1, 2, 3
+            const xPos = col === 0 ? "0%" : col === 1 ? "33.3%" : col === 2 ? "66.6%" : "100%";
+            
+            gsap.set(vBeam, { left: xPos, top: "-10%", opacity: 0 });
+            gsap.to(vBeam, {
+                top: "110%",
+                opacity: 0.8,
+                duration: 2 + Math.random() * 2,
+                ease: "power1.inOut",
+                onComplete: () => {
+                    gsap.set(vBeam, { opacity: 0 });
+                    setTimeout(animateV, Math.random() * 3000);
+                }
+            });
+        };
+
+        animateH();
+        setTimeout(animateV, 1500);
+    };
+
+    initRandomBeams();
     setupGridAnim("#right-grid-decoration");
 
     gsap.to(".layer-1", {
