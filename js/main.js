@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseenter', () => {
             const isEven = Array.from(card.parentNode.children).filter(c => c.classList.contains('solve-card')).indexOf(card) % 2 !== 0;
             gsap.to(card, {
-                backgroundColor: isEven ? '#03d1b0' : '#f8fafc',
+                backgroundColor: isEven ? '#f1f5f9' : '#f8fafc',
                 duration: 0.4,
                 ease: "power2.out"
             });
@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('mouseleave', () => {
             const isEven = Array.from(card.parentNode.children).filter(c => c.classList.contains('solve-card')).indexOf(card) % 2 !== 0;
             gsap.to(card, {
-                backgroundColor: isEven ? '#04f0c3' : '#ffffff',
+                backgroundColor: isEven ? '#f8fafc' : '#ffffff',
                 duration: 0.4,
                 ease: "power2.out"
             });
