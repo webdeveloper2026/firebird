@@ -387,48 +387,40 @@ h1, h2, h3, h4, .font-tech {
 }
 
 #solutions .solve-card:nth-child(even) {
-    background-color: #f8fafc !important;
-    border: 1px solid #e2e8f0 !important;
+    background-color: #f3f4f6 !important; /* Slightly more distinct very light gray */
+    border: 1px solid #e5e7eb !important;
 }
 
-/* Adjusting card content based on background */
-#solutions .solve-card:nth-child(odd) .bg-black\/40 {
+/* Internal elements for BOTH cards should be clean and light */
+#solutions .solve-card .bg-black\/40,
+#solutions .solve-card .bg-brand-orange\/5 {
     background-color: #ffffff !important;
-    border-color: #e2e8f0 !important;
+    border: 1px solid #e5e7eb !important;
 }
 
-#solutions .solve-card:nth-child(odd) .bg-brand-orange\/5 {
-    background-color: #f1f5f9 !important;
-    border-color: #e2e8f0 !important;
+#solutions .solve-card:nth-child(even) .bg-black\/40,
+#solutions .solve-card:nth-child(even) .bg-brand-orange\/5 {
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-#solutions .solve-card:nth-child(even) .text-white {
+#solutions .solve-card .text-white {
     color: var(--brand-dark) !important;
 }
 
-#solutions .solve-card:nth-child(even) .text-slate-400 {
-    color: #475569 !important;
+#solutions .solve-card .text-slate-400 {
+    color: #4b5563 !important;
 }
 
-#solutions .solve-card:nth-child(even) .bg-black\/40 {
-    background-color: #ffffff !important;
-    border-color: #e2e8f0 !important;
-}
-
-#solutions .solve-card:nth-child(even) .bg-brand-orange\/5 {
-    background-color: #f1f5f9 !important;
-    border-color: #e2e8f0 !important;
-}
-
-#solutions .solve-card:nth-child(even) .text-brand-orange {
+#solutions .solve-card .text-brand-orange {
     color: var(--brand-orange) !important;
+    font-weight: 600;
 }
 
-#solutions .solve-card:nth-child(even) .bg-slate-700 {
-    background-color: #cbd5e1 !important;
+#solutions .solve-card .bg-slate-700 {
+    background-color: #9ca3af !important;
 }
 
-#solutions .solve-card:nth-child(even) .text-white\/\[0\.12\] {
+#solutions .solve-card .text-white\/\[0\.12\] {
     color: rgba(2, 6, 23, 0.08) !important;
 }
 
