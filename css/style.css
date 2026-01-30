@@ -326,44 +326,37 @@ h1, h2, h3, h4, .font-tech {
     background: #334155;
 }
 
-/* UCP Modules Section - Brand Theme */
-#modules {
-    background-color: var(--brand-orange);
-    color: var(--brand-dark);
+/* Product Visualization Section - Light Theme */
+#scroll-animation {
+    background-color: #ffffff !important;
     position: relative;
     z-index: 10;
 }
 
-#modules h2 {
-    color: var(--brand-dark);
-}
-
-#modules .max-w-7xl > div > p.text-slate-400 {
-    color: rgba(2, 6, 23, 0.7) !important;
-}
-
-#modules .module-card {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(2, 6, 23, 0.1);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-#modules .module-card h4 {
-    color: var(--brand-dark);
-}
-
-#modules .module-card p {
-    color: rgba(2, 6, 23, 0.8) !important;
-}
-
-#modules .module-card span {
-    background-color: rgba(2, 6, 23, 0.05) !important;
-    border-color: rgba(2, 6, 23, 0.1) !important;
+#scroll-animation h2 {
     color: var(--brand-dark) !important;
 }
 
-#modules .module-card:hover {
-    border-color: var(--brand-dark);
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+#scroll-animation .text-brand-orange {
+    color: var(--brand-orange) !important;
+}
+
+#scroll-animation p {
+    color: #475569 !important;
+}
+
+#scroll-animation .text-slate-500 {
+    color: #64748b !important;
+}
+
+#scroll-animation .text-slate-400 {
+    color: #475569 !important;
+}
+
+#scroll-animation .animation-dark-container {
+    background: radial-gradient(circle at center, rgba(4, 240, 195, 0.15) 0%, rgba(4, 240, 195, 0.05) 40%, transparent 70%);
+}
+
+#scroll-animation .animation-dark-subject {
+    filter: contrast(1.1) brightness(0.9);
 }
