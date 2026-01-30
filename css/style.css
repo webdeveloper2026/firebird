@@ -392,6 +392,16 @@ h1, h2, h3, h4, .font-tech {
 }
 
 /* Adjusting card content based on background */
+#solutions .solve-card:nth-child(odd) .bg-black\/40 {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+#solutions .solve-card:nth-child(odd) .bg-brand-orange\/5 {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+}
+
 #solutions .solve-card:nth-child(even) .text-white {
     color: var(--brand-dark) !important;
 }
