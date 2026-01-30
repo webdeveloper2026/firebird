@@ -346,5 +346,24 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 0.9
     });
 
+    document.querySelectorAll('.solve-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            const isEven = Array.from(card.parentNode.children).filter(c => c.classList.contains('solve-card')).indexOf(card) % 2 !== 0;
+            gsap.to(card, {
+                backgroundColor: isEven ? '#03d1b0' : '#f8fafc',
+                duration: 0.4,
+                ease: "power2.out"
+            });
+        });
+        card.addEventListener('mouseleave', () => {
+            const isEven = Array.from(card.parentNode.children).filter(c => c.classList.contains('solve-card')).indexOf(card) % 2 !== 0;
+            gsap.to(card, {
+                backgroundColor: isEven ? '#04f0c3' : '#ffffff',
+                duration: 0.4,
+                ease: "power2.out"
+            });
+        });
+    });
+
     initGSAP();
 });

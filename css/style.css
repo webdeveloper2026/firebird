@@ -326,37 +326,68 @@ h1, h2, h3, h4, .font-tech {
     background: #334155;
 }
 
-/* Product Visualization Section - Light Theme */
-#scroll-animation {
+/* What Does It Solve Section - Light Theme & Checkered Layout */
+#solutions {
     background-color: #ffffff !important;
     position: relative;
     z-index: 10;
 }
 
-#scroll-animation h2 {
+#solutions h2, #solutions h3 {
     color: var(--brand-dark) !important;
 }
 
-#scroll-animation .text-brand-orange {
-    color: var(--brand-orange) !important;
-}
-
-#scroll-animation p {
+#solutions .text-slate-400 {
     color: #475569 !important;
 }
 
-#scroll-animation .text-slate-500 {
-    color: #64748b !important;
+#solutions .solve-card {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-#scroll-animation .text-slate-400 {
-    color: #475569 !important;
+/* Checkered Pattern for Cards */
+#solutions .solve-card:nth-child(odd) {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
 }
 
-#scroll-animation .animation-dark-container {
-    background: radial-gradient(circle at center, rgba(4, 240, 195, 0.15) 0%, rgba(4, 240, 195, 0.05) 40%, transparent 70%);
+#solutions .solve-card:nth-child(even) {
+    background-color: var(--brand-orange) !important;
+    border: 1px solid rgba(2, 6, 23, 0.05) !important;
 }
 
-#scroll-animation .animation-dark-subject {
-    filter: contrast(1.1) brightness(0.9);
+/* Adjusting card content based on background */
+#solutions .solve-card:nth-child(even) .text-white {
+    color: var(--brand-dark) !important;
+}
+
+#solutions .solve-card:nth-child(even) .text-slate-400 {
+    color: rgba(2, 6, 23, 0.7) !important;
+}
+
+#solutions .solve-card:nth-child(even) .bg-black\/40 {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(2, 6, 23, 0.05) !important;
+}
+
+#solutions .solve-card:nth-child(even) .bg-brand-orange\/5 {
+    background-color: rgba(2, 6, 23, 0.05) !important;
+    border-color: rgba(2, 6, 23, 0.1) !important;
+}
+
+#solutions .solve-card:nth-child(even) .text-brand-orange {
+    color: var(--brand-dark) !important;
+}
+
+#solutions .solve-card:nth-child(even) .bg-slate-700 {
+    background-color: var(--brand-dark) !important;
+}
+
+#solutions .solve-card:nth-child(even) .text-white\/\[0\.12\] {
+    color: rgba(2, 6, 23, 0.1) !important;
+}
+
+#solutions .solve-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
