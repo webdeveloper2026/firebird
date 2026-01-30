@@ -325,3 +325,44 @@ h1, h2, h3, h4, .font-tech {
 ::-webkit-scrollbar-thumb:hover {
     background: #334155;
 }
+
+/* UCP Modules Section - Light Theme */
+#modules {
+    background-color: #ffffff;
+    color: var(--brand-dark);
+    position: relative;
+    z-index: 10;
+}
+
+#modules h2 {
+    color: var(--brand-dark);
+}
+
+#modules .max-w-7xl > div > p.text-slate-400 {
+    color: #475569 !important;
+}
+
+#modules .module-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+#modules .module-card h4 {
+    color: var(--brand-dark);
+}
+
+#modules .module-card p {
+    color: #64748b !important;
+}
+
+#modules .module-card span {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+    color: #64748b !important;
+}
+
+#modules .module-card:hover {
+    border-color: var(--brand-orange);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}

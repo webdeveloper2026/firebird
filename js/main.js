@@ -170,16 +170,17 @@ const initGSAP = () => {
     });
 
     document.querySelectorAll('.module-card').forEach(card => {
+        const isInModules = card.closest('#modules');
         card.addEventListener('mouseenter', () => {
             gsap.to(card, {
-                backgroundColor: '#11192d',
+                backgroundColor: isInModules ? '#f8fafc' : '#11192d',
                 duration: 0.4,
                 ease: "power2.out"
             });
         });
         card.addEventListener('mouseleave', () => {
             gsap.to(card, {
-                backgroundColor: '#0F172A',
+                backgroundColor: isInModules ? '#ffffff' : '#0F172A',
                 duration: 0.4,
                 ease: "power2.out"
             });
