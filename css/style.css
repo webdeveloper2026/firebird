@@ -326,6 +326,41 @@ h1, h2, h3, h4, .font-tech {
     background: #334155;
 }
 
+/* Product Visualization Section - Light Theme */
+#scroll-animation {
+    background-color: #ffffff !important;
+    position: relative;
+    z-index: 10;
+}
+
+#scroll-animation h2 {
+    color: var(--brand-dark) !important;
+}
+
+#scroll-animation .text-brand-orange {
+    color: var(--brand-orange) !important;
+}
+
+#scroll-animation p {
+    color: #475569 !important;
+}
+
+#scroll-animation .text-slate-500 {
+    color: #64748b !important;
+}
+
+#scroll-animation .text-slate-400 {
+    color: #475569 !important;
+}
+
+#scroll-animation .animation-dark-container {
+    background: radial-gradient(circle at center, rgba(4, 240, 195, 0.15) 0%, rgba(4, 240, 195, 0.05) 40%, transparent 70%);
+}
+
+#scroll-animation .animation-dark-subject {
+    filter: contrast(1.1) brightness(0.9);
+}
+
 /* What Does It Solve Section - Light Theme & Checkered Layout */
 #solutions {
     background-color: #ffffff !important;
